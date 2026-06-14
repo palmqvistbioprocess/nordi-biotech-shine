@@ -121,28 +121,38 @@ function About() {
 
 const services = [
   {
-    title: "Bioprocess Development",
-    body: "Upstream & downstream integration, scale-up strategy and process robustness for microbial and yeast platforms.",
+    title: "Scientific & Technical Leadership",
+    items: [
+      "Serve as Interim Lab Head, Scientific Director, Project Lead, or CMC Lead",
+      "Provide scientific coaching, mentoring, and team development",
+      "Lead cross-functional collaboration across R&D, manufacturing, quality, and regulatory functions",
+    ],
   },
   {
-    title: "CMC & Manufacturing Readiness",
-    body: "From clone screening to launch readiness — translating process data into clear development decisions.",
+    title: "Bioprocess Development & Scale-Up",
+    items: [
+      "Design and optimize microbial bioprocesses",
+      "Support fermentation scale-up and technology transfer",
+      "Develop recombinant protein production processes in yeast expression systems",
+      "Troubleshoot complex technical challenges and perform root-cause analyses",
+      "Support CDMO selection, oversight, and manufacturing readiness",
+    ],
   },
   {
-    title: "Precision Fermentation",
-    body: "Strain and process design for Pichia, Saccharomyces, bacteria and filamentous fungi.",
+    title: "Training & Capability Building",
+    items: [
+      "Deliver customized courses in bioprocess development and scale-up",
+      "Train scientists and engineers in microbial physiology and fermentation technology",
+      "Facilitate workshops on technology transfer and industrial biotechnology best practices",
+      "Coach project leaders and technical teams to strengthen organizational capabilities",
+    ],
   },
   {
-    title: "Technology Assessment",
-    body: "De-risking and evaluating novel technologies for industrial application and investor readiness.",
-  },
-  {
-    title: "External Partnerships",
-    body: "CDMO selection, technology transfer and management of collaborations with academia and start-ups.",
-  },
-  {
-    title: "Program Leadership",
-    body: "Cross-functional facilitation, stakeholder alignment and clear scientific communication.",
+    title: "Digital Transformation & AI",
+    items: [
+      "Implement data-driven approaches to process development and optimization",
+      "Help organizations leverage digitalization, advanced analytics, and AI to accelerate development and improve decision-making",
+    ],
   },
 ];
 
