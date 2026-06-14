@@ -270,7 +270,7 @@ function Experience() {
       <div className="mx-auto max-w-6xl px-6 lg:px-10 py-24 md:py-32">
         <div className="grid md:grid-cols-12 gap-12 mb-16">
           <div className="md:col-span-4">
-            <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">03 — Experience</p>
+            <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">04 — Experience</p>
             <h2 className="mt-6 text-3xl md:text-4xl">A track record across the industry.</h2>
           </div>
         </div>
