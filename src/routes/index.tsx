@@ -30,6 +30,7 @@ function Index() {
       <Hero />
       <About />
       <Services />
+      <Mission />
       <Experience />
       <Credentials />
       <Contact />
