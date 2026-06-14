@@ -162,7 +162,7 @@ function Services() {
       <div className="mx-auto max-w-6xl px-6 lg:px-10 py-24 md:py-32">
         <div className="grid md:grid-cols-12 gap-12 mb-16">
           <div className="md:col-span-4">
-            <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">02 — Services</p>
+            <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">02 — What I Do</p>
             <h2 className="mt-6 text-3xl md:text-4xl">How I can help.</h2>
           </div>
           <p className="md:col-span-7 md:col-start-6 text-lg text-muted-foreground leading-relaxed self-end">
@@ -171,17 +171,55 @@ function Services() {
           </p>
         </div>
 
-        <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border">
+        <ul className="grid sm:grid-cols-2 gap-px bg-border border border-border">
           {services.map((s, i) => (
-            <li key={s.title} className="bg-background p-8 md:p-10 min-h-[14rem] flex flex-col">
+            <li key={s.title} className="bg-background p-8 md:p-10 flex flex-col">
               <span className="text-xs text-accent font-medium tabular-nums">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <h3 className="mt-4 text-xl">{s.title}</h3>
-              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{s.body}</p>
+              <ul className="mt-4 space-y-2 text-sm text-muted-foreground leading-relaxed list-disc pl-5">
+                {s.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
             </li>
           ))}
         </ul>
+      </div>
+    </section>
+  );
+}
+
+function Mission() {
+  return (
+    <section id="mission" className="border-t border-border">
+      <div className="mx-auto max-w-6xl px-6 lg:px-10 py-24 md:py-32 grid md:grid-cols-12 gap-12">
+        <div className="md:col-span-4">
+          <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">03 — Mission</p>
+          <h2 className="mt-6 text-3xl md:text-4xl">Biotechnology for a sustainable future.</h2>
+        </div>
+        <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed text-foreground/85">
+          <p>
+            I believe biotechnology will play a critical role in addressing some of the most important challenges
+            facing our world. My mission is to help organizations harness the power of biotechnology to support the
+            green transition, improve planetary health, and build a more sustainable future.
+          </p>
+          <p>
+            Drawing on more than 25 years of experience in pharmaceuticals, industrial biotechnology, and probiotics,
+            I help transform scientific innovation into scalable, efficient, and sustainable manufacturing processes.
+            Through scientific rigor, technological innovation, digitalization, AI-driven development, and knowledge
+            transfer, I work to accelerate the deployment of biotechnologies that create lasting value for people,
+            industry, and the planet.
+          </p>
+          <p>
+            I believe lasting impact comes not only from developing better processes, but also from developing the
+            people and organizations that drive innovation forward.
+          </p>
+          <p className="text-accent italic">
+            Where science meets scalable processes — for a sustainable future.
+          </p>
+        </div>
       </div>
     </section>
   );
