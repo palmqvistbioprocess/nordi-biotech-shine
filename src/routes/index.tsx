@@ -341,7 +341,7 @@ function Contact() {
       <div className="mx-auto max-w-6xl px-6 lg:px-10 py-28 md:py-40">
         <div className="grid md:grid-cols-12 gap-12 items-end">
           <div className="md:col-span-8">
-            <p className="text-xs uppercase tracking-[0.25em] text-accent">04 — Contact</p>
+            <p className="text-xs uppercase tracking-[0.25em] text-accent">05 — Contact</p>
             <h2 className="mt-6 font-display text-5xl md:text-7xl tracking-tight">
               Let's discuss your process.
             </h2>
