@@ -110,7 +110,7 @@ function About() {
             partners.
           </p>
           <p className="text-muted-foreground italic">
-            “Passionate about advancing biotechnology innovations that address health and sustainability challenges.”
+            “Passionate about green solutions, new foods, planetary health — and advancing biotechnology innovations that address health and sustainability challenges.”
           </p>
         </div>
       </div>
