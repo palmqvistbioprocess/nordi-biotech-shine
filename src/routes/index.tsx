@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import logoAsset from "@/assets/logo.png.asset.json";
+import logoAsset from "@/assets/logo-transparent.png.asset.json";
+import portraitAsset from "@/assets/eva-portrait.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -98,6 +99,14 @@ function About() {
         <div className="md:col-span-4">
           <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">01 — About</p>
           <h2 className="mt-6 text-3xl md:text-4xl">A quarter century in bioprocess.</h2>
+          <div className="mt-8 aspect-[4/5] overflow-hidden rounded-sm">
+            <img
+              src={portraitAsset.url}
+              alt="Eva Palmqvist, PhD — Founder & Principal Consultant"
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+          </div>
         </div>
         <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed text-foreground/85">
           <p>
@@ -300,7 +309,7 @@ function Credentials() {
     { k: "25+", v: "years in biotech leadership" },
     { k: "28", v: "scientific publications" },
     { k: "10k+", v: "citations · h-index 22" },
-    { k: "5", v: "languages spoken" },
+    { k: "5", v: "languages spoken fluently" },
   ];
   return (
     <section className="border-t border-border bg-primary text-primary-foreground">
