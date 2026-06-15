@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import logoAsset from "@/assets/logo-transparent.png.asset.json";
 import portraitAsset from "@/assets/eva-photo.jpg.asset.json";
+import headshotAsset from "@/assets/eva-portrait.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -103,6 +104,14 @@ function About() {
             <img
               src={portraitAsset.url}
               alt="Eva Palmqvist, PhD — Founder & Principal Consultant"
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <div className="mt-6 aspect-[4/5] overflow-hidden rounded-sm">
+            <img
+              src={headshotAsset.url}
+              alt="Eva Palmqvist — Portrait"
               className="h-full w-full object-cover"
               loading="lazy"
             />
