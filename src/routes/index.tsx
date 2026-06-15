@@ -123,19 +123,12 @@ function About() {
           <p className="text-muted-foreground italic">
             “Passionate about green solutions, new foods, planetary health — and advancing biotechnology innovations that address health and sustainability challenges.”
           </p>
-          <div className="w-48 overflow-hidden rounded-sm">
-            <img
-              src={headshotAsset.url}
-              alt="Eva Palmqvist — Portrait"
-              className="h-full w-full object-cover"
-              loading="lazy"
-            />
-          </div>
         </div>
       </div>
     </section>
   );
 }
+
 
 const services = [
   {
@@ -357,8 +350,8 @@ function Contact() {
   return (
     <section id="contact" className="border-t border-border">
       <div className="mx-auto max-w-6xl px-6 lg:px-10 py-28 md:py-40">
-        <div className="grid md:grid-cols-12 gap-12 items-end">
-          <div className="md:col-span-8">
+        <div className="grid md:grid-cols-12 gap-12 items-start">
+          <div className="md:col-span-7">
             <p className="text-xs uppercase tracking-[0.25em] text-accent">05 — Contact</p>
             <h2 className="mt-6 font-display text-5xl md:text-7xl tracking-tight">
               Let's discuss your process.
@@ -368,24 +361,34 @@ function Contact() {
               your biotechnology forward.
             </p>
           </div>
-          <div className="md:col-span-4 space-y-4">
-            <a
-              href="mailto:evaakke@gmail.com"
-              className="block hairline pt-4 text-foreground hover:text-accent transition-colors"
-            >
-              <span className="block text-xs uppercase tracking-[0.2em] text-muted-foreground mb-1">Email</span>
-              evaakke@gmail.com
-            </a>
-            <a
-              href="tel:+46760297507"
-              className="block hairline pt-4 text-foreground hover:text-accent transition-colors"
-            >
-              <span className="block text-xs uppercase tracking-[0.2em] text-muted-foreground mb-1">Phone</span>
-              +46 760 29 75 07
-            </a>
-            <div className="hairline pt-4">
-              <span className="block text-xs uppercase tracking-[0.2em] text-muted-foreground mb-1">Based in</span>
-              <p>Lund, Sweden · working internationally</p>
+          <div className="md:col-span-5 space-y-8">
+            <div className="w-48 overflow-hidden rounded-sm">
+              <img
+                src={headshotAsset.url}
+                alt="Eva Palmqvist — Portrait"
+                className="h-full w-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div className="space-y-4">
+              <a
+                href="mailto:evaakke@gmail.com"
+                className="block hairline pt-4 text-foreground hover:text-accent transition-colors"
+              >
+                <span className="block text-xs uppercase tracking-[0.2em] text-muted-foreground mb-1">Email</span>
+                evaakke@gmail.com
+              </a>
+              <a
+                href="tel:+46760297507"
+                className="block hairline pt-4 text-foreground hover:text-accent transition-colors"
+              >
+                <span className="block text-xs uppercase tracking-[0.2em] text-muted-foreground mb-1">Phone</span>
+                +46 760 29 75 07
+              </a>
+              <div className="hairline pt-4">
+                <span className="block text-xs uppercase tracking-[0.2em] text-muted-foreground mb-1">Based in</span>
+                <p>Lund, Sweden · working internationally</p>
+              </div>
             </div>
           </div>
         </div>
@@ -393,6 +396,7 @@ function Contact() {
     </section>
   );
 }
+
 
 function Footer() {
   return (
