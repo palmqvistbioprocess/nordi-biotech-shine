@@ -108,14 +108,6 @@ function About() {
               loading="lazy"
             />
           </div>
-          <div className="mt-6 aspect-[4/5] overflow-hidden rounded-sm">
-            <img
-              src={headshotAsset.url}
-              alt="Eva Palmqvist — Portrait"
-              className="h-full w-full object-cover"
-              loading="lazy"
-            />
-          </div>
         </div>
         <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed text-foreground/85">
           <p>
@@ -131,6 +123,14 @@ function About() {
           <p className="text-muted-foreground italic">
             “Passionate about green solutions, new foods, planetary health — and advancing biotechnology innovations that address health and sustainability challenges.”
           </p>
+          <div className="w-48 overflow-hidden rounded-sm">
+            <img
+              src={headshotAsset.url}
+              alt="Eva Palmqvist — Portrait"
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
     </section>
