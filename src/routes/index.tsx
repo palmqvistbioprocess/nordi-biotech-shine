@@ -110,12 +110,12 @@ function About() {
         </div>
         <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed text-foreground/85">
           <p>
-            Eva is an international biotechnology leader with 25+ years across pharmaceutical, industrial biotech,
+            I am an international biotechnology leader with 25+ years across pharmaceutical, industrial biotech,
             probiotics and start-up environments — leading cross-functional programs from early concept through
             scale-up and technology transfer.
           </p>
           <p>
-            Deep expertise in microbial physiology, bioprocess development and CMC strategy, paired with structured
+            My expertise spans microbial physiology, bioprocess development and CMC strategy, paired with structured
             execution and the ability to align stakeholders across R&amp;D, regulatory, manufacturing and external
             partners.
           </p>
