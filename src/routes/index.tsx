@@ -108,6 +108,14 @@ function About() {
               loading="lazy"
             />
           </div>
+          <div className="mt-6 aspect-[4/5] overflow-hidden rounded-sm">
+            <img
+              src={headshotAsset.url}
+              alt="Eva Palmqvist — Portrait"
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+          </div>
         </div>
         <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed text-foreground/85">
           <p>
