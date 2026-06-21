@@ -361,12 +361,12 @@ function Contact() {
               your biotechnology forward.
             </p>
           </div>
-          <div className="md:col-span-5 space-y-8">
-            <div className="w-48 overflow-hidden rounded-sm">
+          <div className="md:col-span-5">
+            <div className="w-40 md:w-48 aspect-[3/4] overflow-hidden rounded-sm mb-10">
               <img
                 src={headshotAsset.url}
                 alt="Eva Palmqvist — Portrait"
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover object-[center_15%]"
                 loading="lazy"
               />
             </div>
