@@ -360,9 +360,7 @@ function Contact() {
               From early technical reviews to long-term program leadership — get in touch to explore how we can move
               your biotechnology forward.
             </p>
-          </div>
-          <div className="md:col-span-5">
-            <div className="w-40 md:w-48 aspect-[3/4] overflow-hidden rounded-sm mb-10">
+            <div className="mt-10 w-32 md:w-40 aspect-[3/4] overflow-hidden rounded-sm">
               <img
                 src={headshotAsset.url}
                 alt="Eva Palmqvist — Portrait"
@@ -370,6 +368,8 @@ function Contact() {
                 loading="lazy"
               />
             </div>
+          </div>
+          <div className="md:col-span-5">
             <div className="space-y-4">
               <a
                 href="mailto:evaakke@gmail.com"
