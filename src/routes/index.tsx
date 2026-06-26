@@ -362,7 +362,7 @@ function Contact() {
             </p>
             <div className="mt-10 w-32 md:w-40 aspect-[3/4] overflow-hidden rounded-sm">
               <img
-                src={headshotAsset.url}
+                src={croppedAsset.url}
                 alt="Eva Palmqvist — Portrait"
                 className="h-full w-full object-cover object-[center_15%]"
                 loading="lazy"
