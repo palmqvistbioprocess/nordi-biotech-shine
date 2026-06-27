@@ -78,7 +78,8 @@ function Hero() {
           </h1>
           <p className="mt-10 max-w-xl text-lg text-muted-foreground leading-relaxed">
             Independent advisory for biotech innovators — translating complex biology into robust, commercially viable
-            processes that advance human health and a more sustainable industry.
+            processes that advance human health and a more sustainable industry. Based in Sweden, working internationally
+            across Europe and beyond.
           </p>
         </div>
         <div className="md:col-span-4 md:pb-3">
@@ -112,13 +113,14 @@ function About() {
         <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed text-foreground/85">
           <p>
             I am an international biotechnology leader with 25+ years across pharmaceutical, industrial biotech,
-            probiotics and start-up environments — leading cross-functional programs from early concept through
-            scale-up and technology transfer.
+            probiotics and start-up environments in Sweden, Denmark and Germany — leading cross-functional programs
+            from early concept through scale-up and technology transfer.
           </p>
           <p>
             My expertise spans microbial physiology, bioprocess development and CMC strategy, paired with structured
             execution and the ability to align stakeholders across R&amp;D, regulatory, manufacturing and external
-            partners.
+            partners. I bring strong networking and bridge-building skills that connect science, operations and
+            business to drive results.
           </p>
           <p className="text-muted-foreground italic">
             “Passionate about green solutions, new foods, planetary health — and advancing biotechnology innovations that address health and sustainability challenges.”
@@ -137,6 +139,7 @@ const services = [
       "Serve as Interim Lab Head, Scientific Director, Project Lead, or CMC Lead",
       "Provide scientific coaching, mentoring, and team development",
       "Lead cross-functional collaboration across R&D, manufacturing, quality, and regulatory functions",
+      "Build networks and bridges between scientific, operational and business stakeholders to drive alignment",
     ],
   },
   {
