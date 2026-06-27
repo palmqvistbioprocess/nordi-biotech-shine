@@ -139,6 +139,7 @@ const services = [
       "Serve as Interim Lab Head, Scientific Director, Project Lead, or CMC Lead",
       "Provide scientific coaching, mentoring, and team development",
       "Lead cross-functional collaboration across R&D, manufacturing, quality, and regulatory functions",
+      "Build networks and bridges between scientific, operational and business stakeholders to drive alignment",
     ],
   },
   {
