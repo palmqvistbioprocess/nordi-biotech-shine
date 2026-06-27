@@ -78,7 +78,8 @@ function Hero() {
           </h1>
           <p className="mt-10 max-w-xl text-lg text-muted-foreground leading-relaxed">
             Independent advisory for biotech innovators — translating complex biology into robust, commercially viable
-            processes that advance human health and a more sustainable industry.
+            processes that advance human health and a more sustainable industry. Based in Sweden, working internationally
+            across Europe and beyond.
           </p>
         </div>
         <div className="md:col-span-4 md:pb-3">
