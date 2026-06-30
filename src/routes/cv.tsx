@@ -25,7 +25,7 @@ const roles = [
     period: "2026 — present",
     company: "PalmQvist BioProcess Consulting",
     place: "Lund, Sweden",
-    role: "Founder & Senior Consultant (Bioextrax AB)",
+    role: "Founder & Senior Consultant",
     details: [
       "Independent advisory for biotech innovators in bioprocess development, scale-up and CMC strategy.",
       "Interim leadership, technical due diligence, training and digital/AI enablement.",
