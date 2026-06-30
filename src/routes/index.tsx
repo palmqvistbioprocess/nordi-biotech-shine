@@ -75,11 +75,6 @@ function Hero() {
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[1.02] tracking-tight">
             Where science meets <em className="text-accent not-italic">scalable</em> processes.
           </h1>
-          <p className="mt-10 max-w-xl text-lg text-muted-foreground leading-relaxed">
-            Independent advisory for biotech innovators — translating complex biology into robust, commercially viable
-            processes that advance human health and a more sustainable industry. Based in Sweden, working internationally
-            across Europe and beyond.
-          </p>
         </div>
         <div className="md:col-span-5 flex justify-center md:justify-end">
           <img
@@ -111,15 +106,7 @@ function CredentialsBanner() {
   return (
     <section className="border-t border-border bg-primary text-primary-foreground">
       <div className="mx-auto max-w-6xl px-6 lg:px-10 py-16 md:py-20">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          {stats.map((s) => (
-            <div key={s.v}>
-              <div className="font-display text-5xl md:text-6xl text-background">{s.k}</div>
-              <p className="mt-3 text-sm text-background/70 leading-relaxed">{s.v}</p>
-            </div>
-          ))}
-        </div>
-        <div className="mt-12 pt-8 border-t border-background/15">
+        <div>
           <p className="text-xs uppercase tracking-[0.25em] text-background/60 mb-5">
             Experience across
           </p>
@@ -128,6 +115,14 @@ function CredentialsBanner() {
               <li key={c}>{c}</li>
             ))}
           </ul>
+        </div>
+        <div className="mt-12 pt-8 border-t border-background/15 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          {stats.map((s) => (
+            <div key={s.v}>
+              <div className="font-display text-5xl md:text-6xl text-background">{s.k}</div>
+              <p className="mt-3 text-sm text-background/70 leading-relaxed">{s.v}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
