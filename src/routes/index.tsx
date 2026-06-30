@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import logoAsset from "@/assets/logo-transparent.png.asset.json";
+import leafAsset from "@/assets/leaf.png.asset.json";
 import portraitAsset from "@/assets/eva-photo.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
@@ -82,7 +83,7 @@ function Hero() {
         </div>
         <div className="md:col-span-5 flex justify-center md:justify-end">
           <img
-            src={logoAsset.url}
+            src={leafAsset.url}
             alt="PalmQvist leaf mark"
             className="w-full max-w-sm h-auto"
           />
