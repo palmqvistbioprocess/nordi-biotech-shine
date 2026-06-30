@@ -29,6 +29,7 @@ const roles = [
     details: [
       "Independent advisory for biotech innovators in bioprocess development, scale-up and CMC strategy.",
       "Interim leadership, technical due diligence, training and digital/AI enablement.",
+      "Current assignment: supporting Bioextrax with bioprocess development and scale-up of sustainable biotechnology solution.",
     ],
   },
   {
@@ -68,7 +69,7 @@ const roles = [
     role: "Principal Scientist, Yeast Physiology & Fermentation",
     details: [
       "Developed and optimized yeast-based bioprocesses for insulin precursors.",
-      "Co-inventor on WO2009/133099 A2 (insulin precursors).",
+      "First Inventor on WO2009/133099 A2 (insulin precursors).",
       "Mentored scientists and led cross-functional process improvement projects.",
     ],
   },
@@ -196,7 +197,7 @@ function Footer() {
           <img src={logoAsset.url} alt="" className="h-6 w-auto opacity-80" />
           <span>© {new Date().getFullYear()} PalmQvist BioProcess Consulting</span>
         </div>
-        <span className="italic">Where science meets scalable processes.</span>
+        
       </div>
     </footer>
   );
