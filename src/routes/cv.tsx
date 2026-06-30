@@ -115,8 +115,8 @@ function CvPage() {
                     {r.role} · {r.place}
                   </p>
                   <ul className="mt-4 space-y-1.5 text-sm text-foreground/80 list-disc pl-5">
-                    {r.details.map((d) => (
-                      <li key={d}>{d}</li>
+                    {r.details.map((d, i) => (
+                      <li key={i}>{d}</li>
                     ))}
                   </ul>
                 </div>
