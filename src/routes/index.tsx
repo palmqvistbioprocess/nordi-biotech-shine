@@ -75,11 +75,6 @@ function Hero() {
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[1.02] tracking-tight">
             Where science meets <em className="text-accent not-italic">scalable</em> processes.
           </h1>
-          <p className="mt-10 max-w-xl text-lg text-muted-foreground leading-relaxed">
-            Independent advisory for biotech innovators — translating complex biology into robust, commercially viable
-            processes that advance human health and a more sustainable industry. Based in Sweden, working internationally
-            across Europe and beyond.
-          </p>
         </div>
         <div className="md:col-span-5 flex justify-center md:justify-end">
           <img
