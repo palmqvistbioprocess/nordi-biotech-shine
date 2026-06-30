@@ -51,6 +51,7 @@ function Nav() {
           <a href="#about" className="hover:text-foreground transition-colors">About</a>
           <a href="#services" className="hover:text-foreground transition-colors">Services</a>
           <Link to="/cv" className="hover:text-foreground transition-colors">CV</Link>
+          <Link to="/publications" className="hover:text-foreground transition-colors">Publications</Link>
           <Link to="/contact" className="hover:text-foreground transition-colors">Contact</Link>
         </nav>
         <Link
