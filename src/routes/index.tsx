@@ -83,7 +83,7 @@ function Hero() {
         </div>
         <div className="md:col-span-5 flex justify-center md:justify-end">
           <img
-            src={logoAsset.url}
+            src={leafAsset.url}
             alt="PalmQvist leaf mark"
             className="w-full max-w-sm h-auto"
           />
