@@ -70,7 +70,7 @@ function Hero() {
       <div className="mx-auto max-w-6xl px-6 lg:px-10 pt-20 pb-24 md:pt-28 md:pb-32 grid md:grid-cols-12 gap-10 items-center">
         <div className="md:col-span-7">
           <p className="text-xs uppercase tracking-[0.25em] text-accent mb-8">
-            25+ years in biotech industry
+            25+ years in international biotech industry
           </p>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[1.02] tracking-tight">
             Where science meets <em className="text-accent not-italic">scalable</em> processes.
@@ -90,7 +90,7 @@ function Hero() {
 
 function CredentialsBanner() {
   const stats = [
-    { k: "25+", v: "years in biotech leadership" },
+    { k: "25+", v: "years in international biotech industry" },
     { k: "28", v: "scientific publications" },
     { k: "10k+", v: "citations · h-index 22" },
     { k: "5", v: "languages spoken fluently" },
