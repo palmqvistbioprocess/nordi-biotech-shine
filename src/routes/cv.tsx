@@ -39,7 +39,7 @@ const roles = [
     role: "Lab Head, Upstream Process Development — Global CMC Microbial Platform",
     details: [
       "Led upstream development team supporting global microbial CMC pipeline.",
-      "Drove process development and scale-up of recombinant protein production.",
+      <>Drove process development and scale-up of recombinant protein production in <em className="not-italic font-serif">Pichia Pastoris</em>.</>,
       "Aligned cross-site collaboration across R&D, manufacturing and quality.",
     ],
   },
