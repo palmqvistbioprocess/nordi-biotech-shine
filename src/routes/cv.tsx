@@ -25,7 +25,7 @@ const roles = [
     period: "2026 — present",
     company: "PalmQvist BioProcess Consulting",
     place: "Lund, Sweden",
-    role: "Founder & Senior Consultant (Bioextrax AB)",
+    role: "Founder & Senior Consultant",
     details: [
       "Independent advisory for biotech innovators in bioprocess development, scale-up and CMC strategy.",
       "Interim leadership, technical due diligence, training and digital/AI enablement.",
@@ -39,7 +39,7 @@ const roles = [
     role: "Lab Head, Upstream Process Development — Global CMC Microbial Platform",
     details: [
       "Led upstream development team supporting global microbial CMC pipeline.",
-      "Drove process development and scale-up of recombinant protein production.",
+      <>Drove process development and scale-up of recombinant protein production in <em className="not-italic font-serif">Pichia Pastoris</em>.</>,
       "Aligned cross-site collaboration across R&D, manufacturing and quality.",
     ],
   },
@@ -115,8 +115,8 @@ function CvPage() {
                     {r.role} · {r.place}
                   </p>
                   <ul className="mt-4 space-y-1.5 text-sm text-foreground/80 list-disc pl-5">
-                    {r.details.map((d) => (
-                      <li key={d}>{d}</li>
+                    {r.details.map((d, i) => (
+                      <li key={i}>{d}</li>
                     ))}
                   </ul>
                 </div>
