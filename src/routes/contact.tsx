@@ -151,6 +151,7 @@ function Nav() {
           <Link to="/" hash="about" className="hover:text-foreground transition-colors">About</Link>
           <Link to="/" hash="services" className="hover:text-foreground transition-colors">Services</Link>
           <Link to="/cv" className="hover:text-foreground transition-colors">CV</Link>
+          <Link to="/publications" className="hover:text-foreground transition-colors">Publications</Link>
           <Link to="/contact" className="hover:text-foreground transition-colors" activeProps={{ className: "text-foreground" }}>Contact</Link>
         </nav>
       </div>

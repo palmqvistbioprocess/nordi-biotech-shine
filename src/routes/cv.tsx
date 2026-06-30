@@ -137,7 +137,7 @@ function CvPage() {
           </div>
           <div>
             <h2 className="text-xs uppercase tracking-[0.25em] text-muted-foreground mb-4">Recognition</h2>
-            <p>28 scientific publications · h-index 22 · 10k+ citations</p>
+            <p><Link to="/publications" className="hover:text-accent transition-colors underline underline-offset-4 decoration-accent/40">28 scientific publications</Link> · h-index 22 · 10k+ citations</p>
             <p className="mt-3">Inventor — WO2009/133099 A2 (insulin precursors)</p>
             <p className="mt-3">PhD committee member, Lund & Chalmers</p>
           </div>
@@ -176,6 +176,7 @@ function Nav() {
           <Link to="/" hash="about" className="hover:text-foreground transition-colors">About</Link>
           <Link to="/" hash="services" className="hover:text-foreground transition-colors">Services</Link>
           <Link to="/cv" className="hover:text-foreground transition-colors" activeProps={{ className: "text-foreground" }}>CV</Link>
+          <Link to="/publications" className="hover:text-foreground transition-colors">Publications</Link>
           <Link to="/contact" className="hover:text-foreground transition-colors">Contact</Link>
         </nav>
         <Link
