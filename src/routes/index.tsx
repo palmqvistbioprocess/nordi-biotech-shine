@@ -70,7 +70,7 @@ function Hero() {
       <div className="mx-auto max-w-6xl px-6 lg:px-10 pt-20 pb-24 md:pt-28 md:pb-32 grid md:grid-cols-12 gap-10 items-center">
         <div className="md:col-span-7">
           <p className="text-xs uppercase tracking-[0.25em] text-accent mb-8">
-            PalmQvist BioProcess Consulting
+            25+ years in biotech industry
           </p>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[1.02] tracking-tight">
             Where science meets <em className="text-accent not-italic">scalable</em> processes.
@@ -156,9 +156,6 @@ function About() {
             execution and the ability to align stakeholders across R&amp;D, regulatory, manufacturing and external
             partners. I bring strong networking and bridge-building skills that connect science, operations and
             business to drive results.
-          </p>
-          <p className="text-muted-foreground italic">
-            "Passionate about green solutions, new foods, planetary health — and advancing biotechnology innovations that address health and sustainability challenges."
           </p>
         </div>
       </div>
@@ -281,7 +278,7 @@ function Footer() {
           <img src={logoAsset.url} alt="" className="h-6 w-auto opacity-80" />
           <span>© {new Date().getFullYear()} PalmQvist BioProcess Consulting</span>
         </div>
-        <span className="italic">Where science meets scalable processes.</span>
+        
       </div>
     </footer>
   );

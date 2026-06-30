@@ -166,7 +166,7 @@ function Footer() {
           <img src={logoAsset.url} alt="" className="h-6 w-auto opacity-80" />
           <span>© {new Date().getFullYear()} PalmQvist BioProcess Consulting</span>
         </div>
-        <span className="italic">Where science meets scalable processes.</span>
+        
       </div>
     </footer>
   );
