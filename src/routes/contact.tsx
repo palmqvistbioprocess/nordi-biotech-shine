@@ -141,24 +141,6 @@ function ContactForm() {
   );
 }
 
-function Nav() {
-  return (
-    <header className="sticky top-0 z-40 backdrop-blur-md bg-background/80 border-b border-border">
-      <div className="mx-auto max-w-6xl px-6 lg:px-10 h-16 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2.5">
-          <img src={logoAsset.url} alt="PalmQvist" className="h-9 w-auto" />
-        </Link>
-        <nav className="hidden md:flex items-center gap-9 text-sm text-muted-foreground">
-          <Link to="/" hash="about" className="hover:text-foreground transition-colors">About</Link>
-          <Link to="/" hash="services" className="hover:text-foreground transition-colors">Services</Link>
-          <Link to="/cv" className="hover:text-foreground transition-colors">CV</Link>
-          <Link to="/publications" className="hover:text-foreground transition-colors">Publications</Link>
-          <Link to="/contact" className="hover:text-foreground transition-colors" activeProps={{ className: "text-foreground" }}>Contact</Link>
-        </nav>
-      </div>
-    </header>
-  );
-}
 
 function Footer() {
   return (
