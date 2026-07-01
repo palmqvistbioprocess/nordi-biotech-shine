@@ -55,7 +55,7 @@ const publications = [
 function PublicationsPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <Nav />
+      <SiteNav />
       <section>
         <div className="mx-auto max-w-6xl px-6 lg:px-10 pt-20 pb-16 md:pt-28 md:pb-20">
           <p className="text-xs uppercase tracking-[0.25em] text-accent">Scientific Output</p>
