@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { SiteNav } from "@/components/SiteNav";
 import { useState } from "react";
 import logoAsset from "@/assets/logo-transparent.png.asset.json";
 import leafAsset from "@/assets/leaf.png.asset.json";
@@ -29,7 +30,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <Nav />
+      <SiteNav />
       <Hero />
       <CredentialsBanner />
       <About />
@@ -40,30 +41,6 @@ function Index() {
   );
 }
 
-function Nav() {
-  return (
-    <header className="sticky top-0 z-40 backdrop-blur-md bg-background/80 border-b border-border">
-      <div className="mx-auto max-w-6xl px-6 lg:px-10 h-16 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2.5">
-          <img src={logoAsset.url} alt="PalmQvist" className="h-9 w-auto" />
-        </Link>
-        <nav className="hidden md:flex items-center gap-9 text-sm text-muted-foreground">
-          <a href="#about" className="hover:text-foreground transition-colors">About</a>
-          <a href="#services" className="hover:text-foreground transition-colors">Services</a>
-          <Link to="/cv" className="hover:text-foreground transition-colors">CV</Link>
-          <Link to="/publications" className="hover:text-foreground transition-colors">Publications</Link>
-          <Link to="/contact" className="hover:text-foreground transition-colors">Contact</Link>
-        </nav>
-        <Link
-          to="/contact"
-          className="text-sm px-4 py-2 rounded-full border border-foreground/80 text-foreground hover:bg-foreground hover:text-background transition-colors"
-        >
-          Get in touch
-        </Link>
-      </div>
-    </header>
-  );
-}
 
 function Hero() {
   return (

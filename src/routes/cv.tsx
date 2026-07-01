@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { SiteNav } from "@/components/SiteNav";
 import logoAsset from "@/assets/logo-transparent.png.asset.json";
 
 export const Route = createFileRoute("/cv")({
@@ -88,7 +89,7 @@ const roles = [
 function CvPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <Nav />
+      <SiteNav />
       <section>
         <div className="mx-auto max-w-6xl px-6 lg:px-10 pt-20 pb-16 md:pt-28 md:pb-20">
           <p className="text-xs uppercase tracking-[0.25em] text-accent">Curriculum Vitae</p>
@@ -165,30 +166,6 @@ function CvPage() {
   );
 }
 
-function Nav() {
-  return (
-    <header className="sticky top-0 z-40 backdrop-blur-md bg-background/80 border-b border-border">
-      <div className="mx-auto max-w-6xl px-6 lg:px-10 h-16 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2.5">
-          <img src={logoAsset.url} alt="PalmQvist" className="h-9 w-auto" />
-        </Link>
-        <nav className="hidden md:flex items-center gap-9 text-sm text-muted-foreground">
-          <Link to="/" hash="about" className="hover:text-foreground transition-colors">About</Link>
-          <Link to="/" hash="services" className="hover:text-foreground transition-colors">Services</Link>
-          <Link to="/cv" className="hover:text-foreground transition-colors" activeProps={{ className: "text-foreground" }}>CV</Link>
-          <Link to="/publications" className="hover:text-foreground transition-colors">Publications</Link>
-          <Link to="/contact" className="hover:text-foreground transition-colors">Contact</Link>
-        </nav>
-        <Link
-          to="/contact"
-          className="text-sm px-4 py-2 rounded-full border border-foreground/80 text-foreground hover:bg-foreground hover:text-background transition-colors"
-        >
-          Get in touch
-        </Link>
-      </div>
-    </header>
-  );
-}
 
 function Footer() {
   return (
