@@ -136,7 +136,7 @@ function About() {
       <div className="mx-auto max-w-6xl px-6 lg:px-10 py-24 md:py-32 grid md:grid-cols-12 gap-12">
         <div className="md:col-span-4">
           <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">About</p>
-          <h2 className="mt-6 text-3xl md:text-4xl">A quarter century in bioprocess.</h2>
+          <h2 className="mt-6 text-3xl md:text-4xl">Bridging Science, Scale-Up and Strategy</h2>
           <div className="mt-8 aspect-[4/5] overflow-hidden rounded-sm">
             <img
               src={portraitAsset.url}
