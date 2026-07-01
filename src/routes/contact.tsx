@@ -88,7 +88,7 @@ function ContactForm() {
     const body = encodeURIComponent(
       `${form.message}\n\n—\n${form.name}\n${form.email}`,
     );
-    window.location.href = `mailto:evaakke@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:eva@palmqvistbioprocess.com?subject=${subject}&body=${body}`;
     setStatus("sent");
   }
 
