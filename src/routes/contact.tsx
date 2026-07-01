@@ -40,11 +40,11 @@ function ContactPage() {
 
             <div className="mt-12 space-y-4 max-w-md">
               <a
-                href="mailto:evaakke@gmail.com"
+                href="mailto:eva@palmqvistbioprocess.com"
                 className="block hairline pt-4 text-foreground hover:text-accent transition-colors"
               >
                 <span className="block text-xs uppercase tracking-[0.2em] text-muted-foreground mb-1">Email</span>
-                evaakke@gmail.com
+                eva@palmqvistbioprocess.com
               </a>
               <a
                 href="tel:+46760297507"
@@ -88,7 +88,7 @@ function ContactForm() {
     const body = encodeURIComponent(
       `${form.message}\n\n—\n${form.name}\n${form.email}`,
     );
-    window.location.href = `mailto:evaakke@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:eva@palmqvistbioprocess.com?subject=${subject}&body=${body}`;
     setStatus("sent");
   }
 
