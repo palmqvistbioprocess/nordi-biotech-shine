@@ -45,12 +45,12 @@ function Index() {
 function Hero() {
   return (
     <section id="top" className="relative overflow-hidden">
-      <div className="mx-auto max-w-6xl px-6 lg:px-10 pt-20 pb-24 md:pt-28 md:pb-32 grid md:grid-cols-12 gap-10 items-center">
+      <div className="mx-auto max-w-6xl px-6 lg:px-10 pt-12 pb-6 md:pt-14 md:pb-8 grid md:grid-cols-12 gap-6 items-center">
         <div className="md:col-span-7">
-          <p className="text-xs uppercase tracking-[0.25em] text-accent mb-8">
+          <p className="text-xs uppercase tracking-[0.25em] text-accent mb-4">
             25+ years in international biotech industry
           </p>
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[1.02] tracking-tight">
+          <h1 className="font-display text-3xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight">
             Where science meets <em className="text-accent not-italic">scalable</em> processes.
           </h1>
         </div>
@@ -58,7 +58,7 @@ function Hero() {
           <img
             src={leafAsset.url}
             alt="PalmQvist leaf mark"
-            className="w-full max-w-sm h-auto"
+            className="w-full max-w-[12rem] h-auto"
           />
         </div>
       </div>
@@ -83,22 +83,20 @@ function CredentialsBanner() {
   ];
   return (
     <section className="border-t border-border bg-primary text-primary-foreground">
-      <div className="mx-auto max-w-6xl px-6 lg:px-10 py-16 md:py-20">
-        <div>
-          <p className="text-xs uppercase tracking-[0.25em] text-background/60 mb-5">
-            Experience across
-          </p>
-          <ul className="flex flex-wrap gap-x-8 gap-y-3 text-lg md:text-xl font-display text-background">
-            {companies.map((c) => (
-              <li key={c}>{c}</li>
-            ))}
-          </ul>
-        </div>
-        <div className="mt-12 pt-8 border-t border-background/15 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="mx-auto max-w-6xl px-6 lg:px-10 py-5 md:py-6">
+        <p className="text-[10px] uppercase tracking-[0.25em] text-background/60 mb-2">
+          Experience across
+        </p>
+        <ul className="flex flex-wrap gap-x-4 gap-y-1 text-sm md:text-base font-display text-background">
+          {companies.map((c) => (
+            <li key={c}>{c}</li>
+          ))}
+        </ul>
+        <div className="mt-4 pt-3 border-t border-background/15 grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {stats.map((s) => (
             <div key={s.v}>
-              <div className="font-display text-5xl md:text-6xl text-background">{s.k}</div>
-              <p className="mt-3 text-sm text-background/70 leading-relaxed">{s.v}</p>
+              <div className="font-display text-2xl md:text-3xl text-background">{s.k}</div>
+              <p className="mt-0.5 text-[11px] md:text-xs text-background/70 leading-snug">{s.v}</p>
             </div>
           ))}
         </div>
