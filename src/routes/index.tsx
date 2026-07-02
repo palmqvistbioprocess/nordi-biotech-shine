@@ -45,12 +45,12 @@ function Index() {
 function Hero() {
   return (
     <section id="top" className="relative overflow-hidden">
-      <div className="mx-auto max-w-6xl px-6 lg:px-10 pt-20 pb-24 md:pt-28 md:pb-32 grid md:grid-cols-12 gap-10 items-center">
+      <div className="mx-auto max-w-6xl px-6 lg:px-10 pt-16 pb-8 md:pt-20 md:pb-10 grid md:grid-cols-12 gap-8 items-center">
         <div className="md:col-span-7">
-          <p className="text-xs uppercase tracking-[0.25em] text-accent mb-8">
+          <p className="text-xs uppercase tracking-[0.25em] text-accent mb-6">
             25+ years in international biotech industry
           </p>
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[1.02] tracking-tight">
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight">
             Where science meets <em className="text-accent not-italic">scalable</em> processes.
           </h1>
         </div>
@@ -58,7 +58,7 @@ function Hero() {
           <img
             src={leafAsset.url}
             alt="PalmQvist leaf mark"
-            className="w-full max-w-sm h-auto"
+            className="w-full max-w-[14rem] h-auto"
           />
         </div>
       </div>
