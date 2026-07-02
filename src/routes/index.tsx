@@ -83,22 +83,22 @@ function CredentialsBanner() {
   ];
   return (
     <section className="border-t border-border bg-primary text-primary-foreground">
-      <div className="mx-auto max-w-6xl px-6 lg:px-10 py-16 md:py-20">
+      <div className="mx-auto max-w-6xl px-6 lg:px-10 py-8 md:py-10">
         <div>
-          <p className="text-xs uppercase tracking-[0.25em] text-background/60 mb-5">
+          <p className="text-xs uppercase tracking-[0.25em] text-background/60 mb-3">
             Experience across
           </p>
-          <ul className="flex flex-wrap gap-x-8 gap-y-3 text-lg md:text-xl font-display text-background">
+          <ul className="flex flex-wrap gap-x-6 gap-y-2 text-base md:text-lg font-display text-background">
             {companies.map((c) => (
               <li key={c}>{c}</li>
             ))}
           </ul>
         </div>
-        <div className="mt-12 pt-8 border-t border-background/15 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="mt-6 pt-5 border-t border-background/15 grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {stats.map((s) => (
             <div key={s.v}>
-              <div className="font-display text-5xl md:text-6xl text-background">{s.k}</div>
-              <p className="mt-3 text-sm text-background/70 leading-relaxed">{s.v}</p>
+              <div className="font-display text-3xl md:text-4xl text-background">{s.k}</div>
+              <p className="mt-1 text-xs md:text-sm text-background/70 leading-snug">{s.v}</p>
             </div>
           ))}
         </div>
