@@ -4,7 +4,7 @@ import { SiteNav } from "@/components/SiteNav";
 import { useState } from "react";
 import logoAsset from "@/assets/logo-transparent.png.asset.json";
 import leafAsset from "@/assets/leaf.png.asset.json";
-import portraitAsset from "@/assets/eva-photo.jpg.asset.json";
+import profileAsset from "@/assets/eva-profile.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
