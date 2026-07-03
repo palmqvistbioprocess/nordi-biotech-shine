@@ -55,6 +55,10 @@ function ContactPage() {
                 +46 760 29 75 07
               </a>
               <div className="hairline pt-4">
+                <span className="block text-xs uppercase tracking-[0.2em] text-muted-foreground mb-1">Address</span>
+                <p>Webmail (2). one.com</p>
+              </div>
+              <div className="hairline pt-4">
                 <span className="block text-xs uppercase tracking-[0.2em] text-muted-foreground mb-1">Based in</span>
                 <p>Lund, Sweden · working internationally</p>
               </div>
