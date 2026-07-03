@@ -93,3 +93,23 @@
 @utility hairline {
   border-top: 1px solid var(--color-border);
 }
+
+@keyframes leaf-fall {
+  0% {
+    opacity: 0;
+    transform: translateY(-120%) rotate(-25deg);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(8%) rotate(6deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+@utility animate-leaf-fall {
+  animation: leaf-fall 1.6s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both;
+  transform-origin: top center;
+}
