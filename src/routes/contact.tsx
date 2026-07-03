@@ -74,7 +74,6 @@ function ContactPage() {
                 loading="lazy"
               />
             </div>
-            <ContactForm />
           </div>
         </div>
       </section>
