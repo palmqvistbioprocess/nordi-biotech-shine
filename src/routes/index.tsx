@@ -4,7 +4,7 @@ import { SiteNav } from "@/components/SiteNav";
 import { useState } from "react";
 import logoAsset from "@/assets/logo-transparent.png.asset.json";
 import leafAsset from "@/assets/leaf.png.asset.json";
-import portraitAsset from "@/assets/eva-photo.jpg.asset.json";
+import profileAsset from "@/assets/eva-profile.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -123,7 +123,7 @@ function About() {
           <h2 className="mt-6 text-3xl md:text-4xl">Bridging Science, Scale-Up and Technology Transfer</h2>
           <div className="mt-8 aspect-[4/5] overflow-hidden rounded-sm">
             <img
-              src={portraitAsset.url}
+              src={profileAsset.url}
               alt="Eva Palmqvist, PhD — Founder & Principal Consultant"
               className="h-full w-full object-cover"
               loading="lazy"
