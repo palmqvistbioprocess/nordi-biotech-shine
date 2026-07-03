@@ -30,10 +30,18 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <SiteNav />
-      <Hero />
-      <CredentialsBanner />
+    <div className="bg-background text-foreground">
+      <div className="min-h-screen flex flex-col">
+        <SiteNav />
+        <div className="flex-1 flex flex-col">
+          <div className="flex-[2] flex">
+            <Hero />
+          </div>
+          <div className="flex-[1] flex">
+            <CredentialsBanner />
+          </div>
+        </div>
+      </div>
       <About />
       <Services />
       <CTA />
