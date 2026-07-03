@@ -89,7 +89,7 @@ function ContactForm() {
     const body = encodeURIComponent(
       `${form.message}\n\n—\n${form.name}\n${form.email}`,
     );
-    window.location.href = `mailto:eva@palmqvistbioprocess.com?subject=${subject}&body=${body}`;
+    window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=eva@palmqvistbioprocess.com&su=${subject}&body=${body}`;
     setStatus("sent");
   }
 
