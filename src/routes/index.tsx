@@ -64,11 +64,17 @@ function Hero() {
           </h1>
         </div>
         <div className="hidden md:flex md:col-span-5 justify-center items-center">
-          <img
-            src={leafAsset.url}
-            alt="PalmQvist leaf mark"
-            className="w-full max-w-[34rem] lg:max-w-[40rem] h-auto animate-leaf-fall"
-          />
+          <div className="leaf-fall w-full max-w-[34rem] lg:max-w-[40rem]">
+            <div className="leaf-sway">
+              <div className="leaf-spin">
+                <img
+                  src={leafAsset.url}
+                  alt="PalmQvist leaf mark"
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
