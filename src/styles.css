@@ -97,17 +97,23 @@
 @keyframes leaf-fall {
   0% {
     opacity: 0;
-    transform: translateY(-120%) translateX(-25%) rotate(-25deg);
+    transform: translateY(-140%) translateX(-30%) rotate(-28deg);
   }
-  25% {
+  15% {
     opacity: 1;
-    transform: translateY(-40%) translateX(12%) rotate(12deg);
+    transform: translateY(-90%) translateX(10%) rotate(14deg);
   }
-  50% {
-    transform: translateY(-15%) translateX(-10%) rotate(-10deg);
+  35% {
+    transform: translateY(-55%) translateX(-14%) rotate(-12deg);
+  }
+  55% {
+    transform: translateY(-25%) translateX(10%) rotate(9deg);
   }
   75% {
-    transform: translateY(5%) translateX(6%) rotate(5deg);
+    transform: translateY(-8%) translateX(-6%) rotate(-5deg);
+  }
+  90% {
+    transform: translateY(-1%) translateX(2%) rotate(2deg);
   }
   100% {
     opacity: 1;
@@ -116,6 +122,7 @@
 }
 
 @utility animate-leaf-fall {
-  animation: leaf-fall 2.4s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both;
+  animation: leaf-fall 5.5s cubic-bezier(0.37, 0, 0.63, 1) 0.2s both;
   transform-origin: top center;
+  will-change: transform;
 }

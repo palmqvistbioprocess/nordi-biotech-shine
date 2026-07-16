@@ -63,11 +63,11 @@ function Hero() {
             Where science meets <em className="text-accent not-italic">scalable</em> processes.
           </h1>
         </div>
-        <div className="hidden md:flex md:col-span-5 justify-center">
+        <div className="hidden md:flex md:col-span-5 justify-center items-center">
           <img
             src={leafAsset.url}
             alt="PalmQvist leaf mark"
-            className="w-full max-w-[20rem] h-auto animate-leaf-fall"
+            className="w-full max-w-[34rem] lg:max-w-[40rem] h-auto animate-leaf-fall"
           />
         </div>
       </div>
