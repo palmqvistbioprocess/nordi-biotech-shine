@@ -94,35 +94,58 @@
   border-top: 1px solid var(--color-border);
 }
 
-@keyframes leaf-fall {
-  0% {
-    opacity: 0;
-    transform: translateY(-140%) translateX(-30%) rotate(-28deg);
-  }
-  15% {
-    opacity: 1;
-    transform: translateY(-90%) translateX(10%) rotate(14deg);
-  }
-  35% {
-    transform: translateY(-55%) translateX(-14%) rotate(-12deg);
-  }
-  55% {
-    transform: translateY(-25%) translateX(10%) rotate(9deg);
-  }
-  75% {
-    transform: translateY(-8%) translateX(-6%) rotate(-5deg);
-  }
-  90% {
-    transform: translateY(-1%) translateX(2%) rotate(2deg);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) translateX(0) rotate(0deg);
-  }
+/* Falling leaf: three nested layers with independent timings.
+   Outer = vertical fall (linear, gravity-like).
+   Middle = horizontal sway (ease-in-out, pendulum).
+   Inner = slow rotation (ease-in-out).
+   Combined they produce the natural feather drift. */
+
+@keyframes leaf-drop {
+  0%   { transform: translateY(-160%); opacity: 0; }
+  8%   { opacity: 1; }
+  100% { transform: translateY(0);     opacity: 1; }
 }
 
-@utility animate-leaf-fall {
-  animation: leaf-fall 5.5s cubic-bezier(0.37, 0, 0.63, 1) 0.2s both;
+@keyframes leaf-sway {
+  0%   { transform: translateX(-14%); }
+  25%  { transform: translateX(12%); }
+  50%  { transform: translateX(-10%); }
+  75%  { transform: translateX(8%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes leaf-spin {
+  0%   { transform: rotate(-22deg); }
+  20%  { transform: rotate(14deg); }
+  45%  { transform: rotate(-10deg); }
+  70%  { transform: rotate(6deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.leaf-fall {
+  animation: leaf-drop 6s cubic-bezier(0.45, 0.05, 0.55, 0.95) 0.3s both;
   transform-origin: top center;
+  will-change: transform, opacity;
+}
+.leaf-sway {
+  animation: leaf-sway 2.4s ease-in-out 0.3s infinite alternate;
+  animation-duration: 2.4s;
+  animation-fill-mode: both;
   will-change: transform;
 }
+.leaf-fall > .leaf-sway {
+  animation: leaf-sway 2.6s ease-in-out 0.3s 3 alternate, leaf-sway-settle 1s ease-out 8.1s both;
+}
+@keyframes leaf-sway-settle {
+  to { transform: translateX(0); }
+}
+.leaf-spin {
+  animation: leaf-spin 6s cubic-bezier(0.37, 0, 0.63, 1) 0.3s both;
+  transform-origin: 50% 30%;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .leaf-fall, .leaf-sway, .leaf-spin { animation: none; }
+}
+
