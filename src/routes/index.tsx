@@ -94,15 +94,11 @@ function CredentialsBanner() {
     "Danisco",
     "BioGaia",
     "Follicum",
-    "Bioextrax",
   ];
   return (
     <section className="border-t border-border bg-primary text-primary-foreground w-full flex items-center">
       <div className="mx-auto max-w-6xl w-full px-6 lg:px-10 py-5 md:py-6">
-        <p className="text-[10px] uppercase tracking-[0.25em] text-background/60 mb-2">
-          Experience across
-        </p>
-        <ul className="flex flex-wrap gap-x-4 gap-y-1 text-sm md:text-base font-display text-background">
+        <ul className="flex flex-wrap gap-x-4 gap-y-1 text-base md:text-lg lg:text-xl font-display text-background">
           {companies.map((c) => (
             <li key={c}>{c}</li>
           ))}
