@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteNav } from "@/components/SiteNav";
 import logoAsset from "@/assets/logo-transparent.png.asset.json";
+import svansFramAsset from "@/assets/svans_fram.jpg.asset.json";
 
 export const Route = createFileRoute("/cv")({
   head: () => ({
@@ -92,13 +93,24 @@ function CvPage() {
       <SiteNav />
       <section>
         <div className="mx-auto max-w-6xl px-6 lg:px-10 pt-20 pb-16 md:pt-28 md:pb-20">
-          <p className="text-xs uppercase tracking-[0.25em] text-accent">Curriculum Vitae</p>
-          <h1 className="mt-6 font-display text-5xl md:text-7xl tracking-tight">
-            Eva Palmqvist, PhD
-          </h1>
-          <p className="mt-6 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-            Founder & Principal Consultant — PalmQvist BioProcess Consulting. 25+ years across biopharmaceutical process development, industrial biotechnology, and probiotics in Sweden, Denmark and Germany.
-          </p>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-xs uppercase tracking-[0.25em] text-accent">Curriculum Vitae</p>
+              <h1 className="mt-6 font-display text-5xl md:text-7xl tracking-tight">
+                Eva Palmqvist, PhD
+              </h1>
+              <p className="mt-6 max-w-2xl text-lg text-muted-foreground leading-relaxed">
+                Founder & Principal Consultant — PalmQvist BioProcess Consulting. 25+ years across biopharmaceutical process development, industrial biotechnology, and probiotics in Sweden, Denmark and Germany.
+              </p>
+            </div>
+            <div className="relative aspect-[4/5] md:aspect-square overflow-hidden rounded-sm">
+              <img
+                src={svansFramAsset.url}
+                alt="Eva Palmqvist"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
