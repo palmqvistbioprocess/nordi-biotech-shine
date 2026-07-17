@@ -97,8 +97,7 @@ function CvPage() {
             Eva Palmqvist, PhD
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-            Founder & Principal Consultant — PalmQvist BioProcess Consulting. 25+ years across pharmaceutical,
-            industrial biotech and probiotics in Sweden, Denmark and Germany.
+            Founder & Principal Consultant — PalmQvist BioProcess Consulting. 25+ years across biopharmaceutical process development, industrial biotechnology, and probiotics in Sweden, Denmark and Germany.
           </p>
         </div>
       </section>
