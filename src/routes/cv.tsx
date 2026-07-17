@@ -6,13 +6,13 @@ import svansFramAsset from "@/assets/svans_fram.jpg.asset.json";
 export const Route = createFileRoute("/cv")({
   head: () => ({
     meta: [
-      { title: "CV — Eva Palmqvist, PhD" },
+      { title: "CV — Eva Akke Palmqvist, PhD" },
       {
         name: "description",
         content:
-          "Curriculum Vitae of Eva Palmqvist, PhD — 25+ years in biotechnology leadership across pharma, industrial biotech and probiotics in Sweden, Denmark and Germany.",
+          "Curriculum Vitae of Eva Akke Palmqvist, PhD — 25+ years in biotechnology leadership across pharma, industrial biotech and probiotics in Sweden, Denmark and Germany.",
       },
-      { property: "og:title", content: "CV — Eva Palmqvist, PhD" },
+      { property: "og:title", content: "CV — Eva Akke Palmqvist, PhD" },
       {
         property: "og:description",
         content: "Detailed CV — Eva Palmqvist, PhD. 25+ years in biotechnology leadership.",
@@ -97,7 +97,7 @@ function CvPage() {
             <div>
               <p className="text-xs uppercase tracking-[0.25em] text-accent">Curriculum Vitae</p>
               <h1 className="mt-6 font-display text-5xl md:text-7xl tracking-tight">
-                Eva Palmqvist, PhD
+                Eva Akke Palmqvist, PhD
               </h1>
               <p className="mt-6 max-w-2xl text-lg text-muted-foreground leading-relaxed">
                 Founder & Principal Consultant — PalmQvist BioProcess Consulting. 25+ years across biopharmaceutical process development, industrial biotechnology, and probiotics in Sweden, Denmark and Germany.
@@ -106,7 +106,7 @@ function CvPage() {
             <div className="relative aspect-[4/5] md:aspect-square overflow-hidden rounded-sm">
               <img
                 src={svansFramAsset.url}
-                alt="Eva Palmqvist"
+                alt="Eva Akke Palmqvist"
                 className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
