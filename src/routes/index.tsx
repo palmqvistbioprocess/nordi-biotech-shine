@@ -98,7 +98,7 @@ function CredentialsBanner() {
   return (
     <section className="border-t border-border bg-primary text-primary-foreground w-full flex items-center">
       <div className="mx-auto max-w-6xl w-full px-6 lg:px-10 py-5 md:py-6">
-        <ul className="flex flex-wrap gap-x-4 gap-y-1 text-base md:text-lg lg:text-xl font-display text-background">
+        <ul className="flex flex-wrap gap-x-5 gap-y-2 text-lg md:text-xl lg:text-2xl xl:text-3xl font-display text-background">
           {companies.map((c) => (
             <li key={c}>{c}</li>
           ))}
