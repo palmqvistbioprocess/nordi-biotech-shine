@@ -63,8 +63,8 @@ function PublicationsPage() {
             Publications
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-            28 peer-reviewed papers spanning microbial physiology, bioprocess engineering,
-            lignocellulosic bioethanol, recombinant protein production and biosensor technology.
+            28 peer-reviewed papers spanning recombinant protein production, microbial physiology,
+            bioprocess engineering, lignocellulosic bioethanol and biosensor technology.
           </p>
         </div>
       </section>
