@@ -35,8 +35,7 @@ function ContactPage() {
               Let's talk.
             </h1>
             <p className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed">
-              From early technical reviews to long-term program leadership — reach out and let's
-              explore how we can move your biotechnology forward.
+              From independent technical reviews to long-term bioprocess and CMC leadership, I partner with biotechnology companies to transform scientific innovation into scalable, commercially viable manufacturing processes. Let's explore how we can accelerate your path to industrial success.
             </p>
 
             <ContactForm />
