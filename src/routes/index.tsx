@@ -64,18 +64,15 @@ function Hero() {
           </h1>
         </div>
         <div className="hidden md:flex md:col-span-5 justify-center items-center">
-          <div className="leaf-badge relative w-full max-w-[30rem] lg:max-w-[36rem] aspect-square flex items-center justify-center">
-            {/* Sage seal ring */}
-            <div className="absolute inset-[4%] rounded-full border-2 border-accent/25 bg-accent/[0.06]" />
-            <div className="absolute inset-[12%] rounded-full border border-accent/15" />
-
-            {/* Settled leaf */}
-            <div className="leaf-settle leaf-rest-breathe relative w-[85%]">
-              <img
-                src={leafAsset.url}
-                alt="PalmQvist leaf mark"
-                className="w-full h-auto"
-              />
+          <div className="leaf-fall w-full max-w-[34rem] lg:max-w-[40rem]">
+            <div className="leaf-sway">
+              <div className="leaf-spin">
+                <img
+                  src={leafAsset.url}
+                  alt="PalmQvist leaf mark"
+                  className="w-full h-auto"
+                />
+              </div>
             </div>
           </div>
         </div>
