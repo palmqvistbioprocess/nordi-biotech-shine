@@ -70,7 +70,7 @@ function Hero() {
             <div className="absolute inset-[12%] rounded-full border border-accent/15" />
 
             {/* Settled leaf */}
-            <div className="leaf-settle leaf-rest-breathe relative w-[70%]">
+            <div className="leaf-settle leaf-rest-breathe relative w-[85%]">
               <img
                 src={leafAsset.url}
                 alt="PalmQvist leaf mark"
