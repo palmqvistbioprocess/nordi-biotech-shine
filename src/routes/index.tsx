@@ -9,17 +9,17 @@ import profileAsset from "@/assets/eva-profile.jpg.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "PalmQvist BioProcess Consulting — Where science meets scalable processes" },
+      { title: "Palmqvist Bioprocess Consulting- Science. Scaled." },
       {
         name: "description",
         content:
           "Independent bioprocess consulting by Eva Palmqvist, PhD. 25+ years advancing biotech innovations for health and sustainability — from concept to industrial scale.",
       },
-      { property: "og:title", content: "PalmQvist BioProcess Consulting" },
+      { property: "og:title", content: "Palmqvist Bioprocess Consulting- Science. Scaled." },
       {
         property: "og:description",
         content:
-          "Independent bioprocess consulting — translating biology into robust, commercially viable processes.",
+          "Independent bioprocess consulting by Eva Palmqvist, PhD. 25+ years advancing biotech innovations for health and sustainability — from concept to industrial scale.",
       },
       { property: "og:image", content: logoAsset.url },
       { name: "twitter:image", content: logoAsset.url },
