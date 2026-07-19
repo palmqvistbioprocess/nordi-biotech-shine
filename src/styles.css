@@ -94,58 +94,43 @@
   border-top: 1px solid var(--color-border);
 }
 
-/* Falling leaf: three nested layers with independent timings.
-   Outer = vertical fall (linear, gravity-like).
-   Middle = horizontal sway (ease-in-out, pendulum).
-   Inner = slow rotation (ease-in-out).
-   Combined they produce the natural feather drift. */
+/* Leaf as a sage seal: a calm quality mark that lands gently and stays still.
+   Badge scales up and fades in; the leaf settles like a feather, then rests. */
 
-@keyframes leaf-drop {
-  0%   { transform: translateY(-160%); opacity: 0; }
-  8%   { opacity: 1; }
-  100% { transform: translateY(0);     opacity: 1; }
+@keyframes leaf-badge-enter {
+  0%   { transform: scale(0.82); opacity: 0; }
+  100% { transform: scale(1);    opacity: 1; }
 }
 
-@keyframes leaf-sway {
-  0%   { transform: translateX(-14%); }
-  25%  { transform: translateX(12%); }
-  50%  { transform: translateX(-10%); }
-  75%  { transform: translateX(8%); }
-  100% { transform: translateX(0); }
+@keyframes leaf-settle {
+  0%   { transform: translateY(-18%) rotate(-18deg); opacity: 0; }
+  55%  { transform: translateY(2%)  rotate(3deg);  opacity: 1; }
+  100% { transform: translateY(0)   rotate(0deg);   opacity: 1; }
 }
 
-@keyframes leaf-spin {
-  0%   { transform: rotate(-22deg); }
-  20%  { transform: rotate(14deg); }
-  45%  { transform: rotate(-10deg); }
-  70%  { transform: rotate(6deg); }
-  100% { transform: rotate(0deg); }
+@keyframes leaf-rest-breathe {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%      { transform: translateY(-1%) rotate(0.5deg); }
 }
 
-.leaf-fall {
-  animation: leaf-drop 6s cubic-bezier(0.45, 0.05, 0.55, 0.95) 0.3s both;
-  transform-origin: top center;
+.leaf-badge {
+  animation: leaf-badge-enter 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+  transform-origin: center center;
   will-change: transform, opacity;
 }
-.leaf-sway {
-  animation: leaf-sway 2.4s ease-in-out 0.3s infinite alternate;
-  animation-duration: 2.4s;
-  animation-fill-mode: both;
-  will-change: transform;
-}
-.leaf-fall > .leaf-sway {
-  animation: leaf-sway 2.6s ease-in-out 0.3s 3 alternate, leaf-sway-settle 1s ease-out 8.1s both;
-}
-@keyframes leaf-sway-settle {
-  to { transform: translateX(0); }
-}
-.leaf-spin {
-  animation: leaf-spin 6s cubic-bezier(0.37, 0, 0.63, 1) 0.3s both;
+
+.leaf-settle {
+  animation: leaf-settle 1.8s cubic-bezier(0.22, 1, 0.36, 1) 0.4s both;
   transform-origin: 50% 30%;
-  will-change: transform;
+  will-change: transform, opacity;
+}
+
+.leaf-rest-breathe {
+  animation: leaf-rest-breathe 8s ease-in-out 2.2s infinite;
+  transform-origin: 50% 30%;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .leaf-fall, .leaf-sway, .leaf-spin { animation: none; }
+  .leaf-badge, .leaf-settle, .leaf-rest-breathe { animation: none; }
 }
 
