@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { SiteNav } from "@/components/SiteNav";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import logoAsset from "@/assets/logo-transparent.png.asset.json";
 import leafAsset from "@/assets/leaf.png.asset.json";
 import profileAsset from "@/assets/eva-profile.jpg.asset.json";
