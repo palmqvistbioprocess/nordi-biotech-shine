@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { SiteNav } from "@/components/SiteNav";
+import { useState } from "react";
 
 import logoAsset from "@/assets/logo-transparent.png.asset.json";
 import leafAsset from "@/assets/leaf.png.asset.json";
