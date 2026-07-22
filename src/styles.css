@@ -111,6 +111,12 @@
   will-change: transform, opacity;
 }
 
+.leaf-appear {
+  animation: leaf-drop 1.6s ease-out 0.3s both;
+  transform-origin: top center;
+  will-change: transform, opacity;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .leaf-fall { animation: none; }
 }

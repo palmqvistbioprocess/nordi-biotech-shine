@@ -1,7 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { SiteNav } from "@/components/SiteNav";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
+
 import logoAsset from "@/assets/logo-transparent.png.asset.json";
 import leafAsset from "@/assets/leaf.png.asset.json";
 import profileAsset from "@/assets/eva-profile.jpg.asset.json";
@@ -52,27 +53,6 @@ function Index() {
 
 
 function Hero() {
-  const leafRef = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const el = leafRef.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setVisible(true);
-            observer.disconnect();
-          }
-        });
-      },
-      { threshold: 0.2 },
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <section id="top" className="relative overflow-hidden w-full flex items-center">
       <div className="mx-auto max-w-6xl w-full px-6 lg:px-10 py-8 grid md:grid-cols-12 gap-6 items-center">
@@ -85,11 +65,7 @@ function Hero() {
           </h1>
         </div>
         <div className="hidden md:flex md:col-span-5 justify-center items-center">
-          <div
-            ref={leafRef}
-            className="w-full max-w-[34rem] lg:max-w-[40rem] transition-opacity duration-[1400ms] ease-out"
-            style={{ opacity: visible ? 1 : 0 }}
-          >
+          <div className="w-full max-w-[34rem] lg:max-w-[40rem] leaf-appear">
             <img
               src={leafAsset.url}
               alt="PalmQvist leaf mark"
