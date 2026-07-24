@@ -151,7 +151,7 @@ function CvPage() {
             <h2 className="text-xs uppercase tracking-[0.25em] text-muted-foreground mb-4">Recognition</h2>
             <p><Link to="/publications" className="hover:text-accent transition-colors underline underline-offset-4 decoration-accent/40">28 scientific publications</Link> · 10k+ citations</p>
             <p className="mt-3">Inventor — WO2009/133099 A2 (insulin precursors for oral treatment of diabetes)</p>
-            <p className="mt-3">PhD committee member, Lund & Chalmers</p>
+            <p className="mt-3">PhD committee member, LTH, Lund & Chalmers, Gothenburg</p>
           </div>
           <div>
             <h2 className="text-xs uppercase tracking-[0.25em] text-muted-foreground mb-4">Languages</h2>
