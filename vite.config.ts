@@ -41,10 +41,12 @@ export default defineConfig(
           ],
         },
         nitro: {
-          preset: "static",
+          // Keep the default preset; the static HTML we care about is written
+          // into publicDir by TanStack Start's prerenderer.
           output: {
             dir: ".output",
             publicDir: ".output/public",
+            serverDir: ".output/server",
           },
         },
         vite: { base },
