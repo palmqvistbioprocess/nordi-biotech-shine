@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { SiteNav } from "@/components/SiteNav";
 import logoAsset from "@/assets/logo-transparent.png.asset.json";
+import { assetUrl } from "@/lib/asset-url";
 import croppedAsset from "@/assets/cropped.jpg.asset.json";
 
 export const Route = createFileRoute("/contact")({
@@ -65,7 +66,7 @@ function ContactPage() {
           <div className="md:col-span-5">
             <div className="w-40 md:w-48 aspect-[3/4] overflow-hidden rounded-sm mb-8">
               <img
-                src={croppedAsset.url}
+                src={assetUrl(croppedAsset.url)}
                 alt="Eva Palmqvist — Portrait"
                 className="h-full w-full object-cover object-[center_15%]"
                 loading="lazy"
@@ -181,7 +182,7 @@ function Footer() {
     <footer className="border-t border-border">
       <div className="mx-auto max-w-6xl px-6 lg:px-10 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
         <div className="flex items-center gap-3">
-          <img src={logoAsset.url} alt="" className="h-6 w-auto opacity-80" />
+          <img src={assetUrl(logoAsset.url)} alt="" className="h-6 w-auto opacity-80" />
           <span>© {new Date().getFullYear()} PalmQvist BioProcess Consulting</span>
         </div>
       </div>

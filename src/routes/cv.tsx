@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteNav } from "@/components/SiteNav";
 import logoAsset from "@/assets/logo-transparent.png.asset.json";
+import { assetUrl } from "@/lib/asset-url";
 import svansFramAsset from "@/assets/svans_fram.jpg.asset.json";
 
 export const Route = createFileRoute("/cv")({
@@ -105,7 +106,7 @@ function CvPage() {
             </div>
             <div className="relative aspect-[4/5] md:aspect-square overflow-hidden rounded-sm">
               <img
-                src={svansFramAsset.url}
+                src={assetUrl(svansFramAsset.url)}
                 alt="Eva Akke Palmqvist"
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -183,7 +184,7 @@ function Footer() {
     <footer className="border-t border-border">
       <div className="mx-auto max-w-6xl px-6 lg:px-10 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
         <div className="flex items-center gap-3">
-          <img src={logoAsset.url} alt="" className="h-6 w-auto opacity-80" />
+          <img src={assetUrl(logoAsset.url)} alt="" className="h-6 w-auto opacity-80" />
           <span>© {new Date().getFullYear()} PalmQvist BioProcess Consulting</span>
         </div>
         

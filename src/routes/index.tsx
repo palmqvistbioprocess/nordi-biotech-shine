@@ -4,6 +4,7 @@ import { SiteNav } from "@/components/SiteNav";
 import { useState } from "react";
 
 import logoAsset from "@/assets/logo-transparent.png.asset.json";
+import { assetUrl } from "@/lib/asset-url";
 import leafAsset from "@/assets/leaf.png.asset.json";
 import profileAsset from "@/assets/eva-profile.jpg.asset.json";
 
@@ -22,8 +23,8 @@ export const Route = createFileRoute("/")({
         content:
           "Independent bioprocess consulting by Eva Palmqvist, PhD. 25+ years advancing biotech innovations for health and sustainability — from concept to industrial scale.",
       },
-      { property: "og:image", content: logoAsset.url },
-      { name: "twitter:image", content: logoAsset.url },
+      { property: "og:image", content: assetUrl(logoAsset.url) },
+      { name: "twitter:image", content: assetUrl(logoAsset.url) },
     ],
   }),
   component: Index,
@@ -67,7 +68,7 @@ function Hero() {
         <div className="hidden md:flex md:col-span-5 justify-center items-center">
           <div className="w-full max-w-[34rem] lg:max-w-[40rem] leaf-appear">
             <img
-              src={leafAsset.url}
+              src={assetUrl(leafAsset.url)}
               alt="PalmQvist leaf mark"
               className="w-full h-auto"
             />
@@ -125,7 +126,7 @@ function About() {
           <h2 className="mt-6 text-3xl md:text-4xl">Bridging Science, Scale-Up and Technology Transfer</h2>
           <div className="mt-8 aspect-[4/5] overflow-hidden rounded-sm">
             <img
-              src={profileAsset.url}
+              src={assetUrl(profileAsset.url)}
               alt="Eva Palmqvist, PhD — Founder & Principal Consultant"
               className="h-full w-full object-cover"
               loading="lazy"
@@ -263,7 +264,7 @@ function Footer() {
     <footer className="border-t border-border">
       <div className="mx-auto max-w-6xl px-6 lg:px-10 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
         <div className="flex items-center gap-3">
-          <img src={logoAsset.url} alt="" className="h-6 w-auto opacity-80" />
+          <img src={assetUrl(logoAsset.url)} alt="" className="h-6 w-auto opacity-80" />
           <span>© {new Date().getFullYear()} PalmQvist BioProcess Consulting</span>
         </div>
         
