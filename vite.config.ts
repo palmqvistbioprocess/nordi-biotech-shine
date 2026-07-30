@@ -40,15 +40,8 @@ export default defineConfig(
             { path: "/publications", prerender: { enabled: true } },
           ],
         },
-        nitro: {
-          // Keep the default preset; the static HTML we care about is written
-          // into publicDir by TanStack Start's prerenderer.
-          output: {
-            dir: ".output",
-            publicDir: ".output/public",
-            serverDir: ".output/server",
-          },
-        },
+        // No nitro/server bundle: the site is fully prerendered to static HTML.
+        nitro: false,
         vite: { base },
       },
 );
