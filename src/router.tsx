@@ -7,7 +7,10 @@ export const getRouter = () => {
 
   const router = createRouter({
     routeTree,
+    // Serves correctly from a subpath (e.g. GitHub Pages project site).
+    basepath: import.meta.env.BASE_URL,
     context: { queryClient },
+
     scrollRestoration: true,
     defaultPreloadStaleTime: 0,
   });
