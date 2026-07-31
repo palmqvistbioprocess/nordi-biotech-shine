@@ -35,7 +35,8 @@ jobs:
       - name: Build static website
         run: npm run build:pages
         env:
-          BASE_PATH: /nordi-biotech-shine/
+          BASE_PATH: /
+          CUSTOM_DOMAIN: palmqvistbioprocess.com
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
